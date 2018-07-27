@@ -124,7 +124,7 @@ def _renumber_pdb_residue(fhandle, opt_dict):
                 resi += 1
 
             if not opts.get('chain') or line[21] in opts['chain']:
-                yield line[:22] + str(resi).rjust(4) + line[28:]
+                yield line[:22] + str(resi).rjust(4) + line[27:]
                 continue
 
         yield line
